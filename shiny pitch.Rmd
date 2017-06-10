@@ -1,0 +1,66 @@
+---
+title: "Shiny App Pitch"
+author: "Erik Altink"
+date: "June, 10th 2017"
+output: 
+  ioslides_presentation:
+    css: shinypitchcss.css
+    widescreen: yes
+    smaller: true
+---
+
+## My Awesome Shiny App Pitch
+
+This is my presentation to pitch my Shiny App.
+
+The App is awesome and you will love it. There aren't that many apps that can be compared to this app!
+
+Just follow this presentation and you will see why.
+
+## The reasons the app is Awesome
+
+The app is awesome. It is the best app available.
+These are some of the awesome features:
+
+- The app takes input
+- The app uses a slider to input your age
+- The app uses a checkbox to confirm if you had your birthday this year
+- The app does calculations
+- The app gives you output
+- The app waits for the use to click the submit button.
+
+The best app available! This app is awesome!
+
+YOU are in control!
+
+## How does the app work
+
+The app is so easy to use. There is a slider to input your age and a checkbox to confirm if you had your birthday this year. Really easy to use.
+
+An example calculation:
+
+```{r, echo = TRUE}
+currentYear <- as.integer(format(Sys.Date(), "%Y"))
+currentAge <- 35
+hadBirthday <- TRUE
+
+if(hadBirthday) {
+  yearOfBirth <- currentYear - currentAge  
+} else {
+  yearOfBirth <- currentYear - (currentAge + 1)
+}
+
+yearOfBirth
+```
+
+## What are you waiting for?
+
+The app is hosted on RStudio Shiny Server:
+https://altinke.shinyapps.io/birthyearcalculator/
+
+Easy as that. There is nothing simpeler than that. Everybody should use RStudio Shiny Server. They are the best!
+
+The code of this awesome app can be found on Github:
+https://github.com/altinke/shiny_app/tree/gh-pages/BirthyearCalculator
+
+Github is awesome too!
